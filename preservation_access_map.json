@@ -1,0 +1,543 @@
+[
+
+	
+	
+	{
+		"label": "Title",
+		"namespace": "dcterms",
+		"name": "title",
+		"definition": "A name given to the resource.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#title",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/title",
+		"source": "http://purl.org/dc/terms/title",
+		"crosswalk": {"avalon":{"label":"Title"}},
+		"range": [{"label":"String"}],
+		"obligation": "required",
+		"type": "descriptive",
+		"repeatable": false,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Alternate Title",
+		"namespace": "dcterms",
+		"name": "alternative",
+		"definition": "An alternative name for the resource.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#alternative",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/alternative",
+		"source": "http://purl.org/dc/terms/alternative",
+		
+		"range": [{"label":"String"}],
+		"obligation": "optional",
+		"type": "descriptive",
+		"repeatable": true,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Series Title",
+		"namespace": "bf",
+		"name": "partOf",
+		"definition": "Resource in which the described resource is physically or logically contained.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#partOf",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/partOf",
+		"source": "http://id.loc.gov/ontologies/bibframe#p_partOf",
+		"crosswalk": {"avalon":{"label":"note","type":"series title"}},
+		"range": [{"label":"String"}],
+		"obligation": "optional",
+		"type": "descriptive",
+		"repeatable": true,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Creator",
+		"namespace": "dcterms",
+		"name": "creator",
+		"definition": "An entity primarily responsible for making the resource.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#creator",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/creator",
+		"source": "http://purl.org/dc/terms/creator",
+		"crosswalk": {"avalon":{"label":"Creator"}},
+		"range": [{"label":"Agent","uri":"https://id.lib.uh.edu/ark:/84475/au58708x76f"}],
+		"obligation": "recommended",
+		"type": "descriptive",
+		"repeatable": true,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Contributor",
+		"namespace": "dcterms",
+		"name": "contributor",
+		"definition": "An entity responsible for making contributions to the resource.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#contributor",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/contributor",
+		"source": "http://purl.org/dc/terms/contributor",
+		"crosswalk": {"avalon":{"label":"Contributor"}},
+		"range": [{"label":"Agent","uri":"https://id.lib.uh.edu/ark:/84475/au58708x76f"}],
+		"obligation": "optional",
+		"type": "descriptive",
+		"repeatable": true,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Publisher",
+		"namespace": "dcterms",
+		"name": "publisher",
+		"definition": "An entity responsible for making the resource available.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#publisher",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/publisher",
+		"source": "http://purl.org/dc/terms/publisher",
+		"crosswalk": {"avalon":{"label":"Publisher"}},
+		"range": [{"label":"Agent","uri":"https://id.lib.uh.edu/ark:/84475/au58708x76f"}],
+		"obligation": "recommended",
+		"type": "descriptive",
+		"repeatable": true,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Date",
+		"namespace": "dc",
+		"name": "date",
+		"definition": "A point or period of time associated with an event in the lifecycle of the resource.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#date",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/date",
+		"source": "http://purl.org/dc/elements/1.1/date",
+		"crosswalk": {"avalon":{"label":"Date Issued"}},
+		"range": [{"label":"EDTF Date"}],
+		"obligation": "stronglyRecommended",
+		"type": "descriptive",
+		"repeatable": true,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Language",
+		"namespace": "dcterms",
+		"name": "language",
+		"definition": "A language of the resource.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#language",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/language",
+		"source": "http://purl.org/dc/terms/language",
+		"crosswalk": {"avalon":{"label":"Language"}},
+		"range": [{"label":"Lexvo Code","values":["eng","fre","spa","cmn","deu","fas","fin","heb","hrv","isl","kor","lat","nld","pol","por","srp","tur","zap","zho"]}],
+		"obligation": "requiredWhenAvailable",
+		"type": "descriptive",
+		"repeatable": true,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Description",
+		"namespace": "dcterms",
+		"name": "description",
+		"definition": "An account of the resource.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#description",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/description",
+		"source": "http://purl.org/dc/terms/description",
+		"crosswalk": {"avalon":{"label":"Abstract"}},
+		"range": [{"label":"String"}],
+		"obligation": "optional",
+		"type": "descriptive",
+		"repeatable": false,
+		"input": "multi",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Subject",
+		"namespace": "dcterms",
+		"name": "subject",
+		"definition": "The topic of the resource.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#subject",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/subject",
+		"source": "http://purl.org/dc/terms/subject",
+		"crosswalk": {"avalon":{"label":"Topical Subject"}},
+		"range": [{"label":"Agent","uri":"https://id.lib.uh.edu/ark:/84475/au58708x76f"},{"label":"Concept","uri":"https://id.lib.uh.edu/ark:/84475/au0477sn120"}],
+		"obligation": "stronglyRecommended",
+		"type": "descriptive",
+		"repeatable": true,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Place",
+		"namespace": "dcterms",
+		"name": "spatial",
+		"definition": "Spatial characteristics of the resource.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#spatial",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/spatial",
+		"source": "http://purl.org/dc/terms/spatial",
+		"crosswalk": {"avalon":{"label":"Geographic Subject"}},
+		"range": [{"label":"Place","uri":"https://id.lib.uh.edu/ark:/84475/au9146r1446"}],
+		"obligation": "optional",
+		"type": "descriptive",
+		"repeatable": true,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Time Period",
+		"namespace": "dcterms",
+		"name": "temporal",
+		"definition": "Temporal characteristics of the resource.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#temporal",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/temporal",
+		"source": "http://purl.org/dc/terms/temporal",
+		"crosswalk": {"avalon":{"label":"Temporal Subject"}},
+		"range": [{"label":"Time Period","uri":"https://id.lib.uh.edu/ark:/84475/au0921gj446"}],
+		"obligation": "optional",
+		"type": "descriptive",
+		"repeatable": true,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Genre",
+		"namespace": "edm",
+		"name": "hasType",
+		"definition": "The identifier of a concept, or a word or phrase from a controlled vocabulary (thesaurus etc) giving the type of the CHO.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#hasType",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/hasType",
+		"source": "http://www.europeana.eu/schemas/edm/hasType",
+		"crosswalk": {"avalon":{"label":"Genre"}},
+		"range": [{"label":"AAT Genre Term","values":["admission tickets","advertisements","agendas (administrative records)","annual reports","application forms","architectural documents","architectural drawings (visual works)","architectural models","art (fine art)","articles","audiocassettes","badges","black-and-white negatives","black-and-white photographs","booklets","books","broadsides (notices)","brochures","business cards","business records","cards (information artifacts)","caricatures","cartoons (humorous images)","catalogs (documents)","certificates","clippings (information artifacts)","color negatives","color photographs","color slides","comics (documents)","copper engravings (visual works)","copy prints","correspondence","diaries","digital images","document (object genre)","documents (object genre)","drawings (visual works)","engravings (prints)","envelopes","essays","financial records","financial statements","fliers (printed matter)","folders (containers)","government records","home movies","illuminated manuscripts","illustrations (layout features)","inscriptions","instructions (document genre)","interviews","invitations","journals (periodicals)","leaflets (printed works)","lectures","ledgers (account books)","legal documents","letters (correspondence)","letters of recommendation","lists (document genres)","manuscripts (documents)","maps (documents)","memorabilia","memorandums","menus","military records","motion pictures (visual works)","napkins (culinary textile)","newsletters","newspapers","notebooks","notes","obituaries","pages (components)","pamphlets","paper money","periodicals","photographs","plates (illustrations)","playbills","poems","political cartoons","postcards","posters","presentation copies","press releases","prints (visual works)","programs (documents)","property records","questionnaires","reports","résumés (personnel records)","rosters","sashes (costume accessories)","school yearbooks","scrapbooks","sheet music","sketches","songs (musical compositions)","speeches (documents)","stamps (tools)","stickers","surveys (documents)","T-shirts","telegrams","television programs","woodcuts (prints)","yearbooks"]}],
+		"obligation": "optional",
+		"type": "descriptive",
+		"repeatable": true,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Format",
+		"namespace": "dc",
+		"name": "format",
+		"definition": "The file format, physical medium, or dimensions of the resource.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#format",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/format",
+		"source": "http://purl.org/dc/elements/1.1/format",
+		
+		"range": [{"label":"String"}],
+		"obligation": "recommended",
+		"type": "descriptive",
+		"repeatable": true,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Type",
+		"namespace": "dcterms",
+		"name": "type",
+		"definition": "The nature or genre of the resource.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#type",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/type",
+		"source": "http://purl.org/dc/terms/type",
+		
+		"range": [{"label":"DCMI Type","values":["Image","Moving Image","Sound","Text"]}],
+		"obligation": "required",
+		"type": "descriptive",
+		"repeatable": false,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Extent",
+		"namespace": "dcterms",
+		"name": "extent",
+		"definition": "The size or duration of the resource.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#extent",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/extent",
+		"source": "http://purl.org/dc/terms/extent",
+		"crosswalk": {"avalon":{"label":"Physical Description"}},
+		"range": [{"label":"String"}],
+		"obligation": "optional",
+		"type": "descriptive",
+		"repeatable": true,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Identifier",
+		"namespace": "dcterms",
+		"name": "identifier",
+		"definition": "An unambiguous reference to the resource within a given context.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#identifier",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/identifier",
+		"source": "http://purl.org/dc/terms/identifier",
+		"crosswalk": {"avalon":{"label":"other identifier","type":"other"}},
+		"range": [{"label":"String"}],
+		"obligation": "requireWhenAvailable",
+		"type": "administrative",
+		"repeatable": true,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Collection",
+		"namespace": "dcterms",
+		"name": "isPartOf",
+		"definition": "A related resource in which the described resource is physically or logically included.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#isPartOf",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/isPartOf",
+		"source": "http://purl.org/dc/terms/isPartOf",
+		"crosswalk": {"avalon":{"label":"note","type":"collection"}},
+		"range": [{"label":"Collection","uri":"https://id.lib.uh.edu/ark:/84475/au0511xd315"}],
+		"obligation": "requiredWhenAvailable",
+		"type": "administrative",
+		"repeatable": true,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "ArchivesSpace URI",
+		"namespace": "uhlib",
+		"name": "aSpaceUri",
+		"definition": "The URI in ArchivesSpace that identifies the archival object in which the resource is contained.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#aSpaceUri",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/aSpaceUri",
+		
+		"crosswalk": {"avalon":{"label":"other identifier","type":"aspace uri"}},
+		"range": [{"label":"ArchivesSpace Object URI"}],
+		"obligation": "requiredWhenAvailable",
+		"type": "administrative",
+		"repeatable": false,
+		"input": "single",
+		"visible": true,
+		"editable": false
+	},
+
+	
+	
+	{
+		"label": "Donor",
+		"namespace": "relators",
+		"name": "donor",
+		"definition": "A former owner of an item who donated that item to another owner.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#donor",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/donor",
+		"source": "http://id.loc.gov/vocabulary/relators/dnr",
+		"crosswalk": {"avalon":{"label":"note","type":"donor"}},
+		"range": [{"label":"Agent","uri":"https://id.lib.uh.edu/ark:/84475/au58708x76f"}],
+		"obligation": "optional",
+		"type": "administrative",
+		"repeatable": true,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Rights",
+		"namespace": "dc",
+		"name": "rights",
+		"definition": "Information about rights held in and over the resource.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#rights",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/rights",
+		"source": "http://purl.org/dc/elements/1.1/rights",
+		"crosswalk": {"avalon":{"label":"Rights Statement"}},
+		"range": [{"label":"Rights Statement","values":["Copyright Not Evaluated","In Copyright","In Copyright - Copyright Owner Unlocatable or Unidentifiable","In Copyright - Educational Use Permitted","No Copyright - United States","Public Domain","Rights Undetermined"]}],
+		"obligation": "required",
+		"type": "administrative",
+		"repeatable": false,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Rights Holder",
+		"namespace": "dcterms",
+		"name": "rightsHolder",
+		"definition": "A person or organization owning or managing rights over the resource.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#rightsHolder",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/rightsHolder",
+		"source": "http://purl.org/dc/terms/rightsHolder",
+		"crosswalk": {"avalon":{"label":"note","type":"rights holder"}},
+		"range": [{"label":"Agent","uri":"https://id.lib.uh.edu/ark:/84475/au58708x76f"}],
+		"obligation": "optional",
+		"type": "administrative",
+		"repeatable": true,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Access Rights",
+		"namespace": "dcterms",
+		"name": "accessRights",
+		"definition": "Information about who can access the resource or an indication of its security status.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#accessRights",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/accessRights",
+		"source": "http://purl.org/dc/terms/accessRights",
+		
+		"range": [{"label":"Access Rights Statement","values":["Individual","Staff","Campus","Community","Public"]}],
+		"obligation": "required",
+		"type": "administrative",
+		"repeatable": false,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Note",
+		"namespace": "uhlib",
+		"name": "note",
+		"definition": "Additional information about the described resource.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#note",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/note",
+		
+		"crosswalk": {"avalon":{"label":"note","type":"general"}},
+		"range": [{"label":"String"}],
+		"obligation": "optional",
+		"type": "administrative",
+		"repeatable": true,
+		"input": "multi",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Related Item",
+		"namespace": "dcterms",
+		"name": "relation",
+		"definition": "A related resource.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#relation",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/relation",
+		"source": "http://purl.org/dc/terms/relation",
+		"crosswalk": {"avalon":{"label":"Related Item URL"}},
+		"range": [{"label":"Access ARK URI"}],
+		"obligation": "optional",
+		"type": "administrative",
+		"repeatable": true,
+		"input": "single",
+		"visible": true,
+		"editable": true
+	},
+
+	
+	
+	{
+		"label": "Digital Object ARK",
+		"namespace": "edm",
+		"name": "isShownAt",
+		"definition": "The URL to the digital object on the provider’s web site in its full information context.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#isShownAt",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/isShownAt",
+		"source": "http://www.europeana.eu/schemas/edm/isShownAt",
+		"crosswalk": {"avalon":{"label":"other identifier","type":"digital object"}},
+		"range": [{"label":"Digital Object ARK Identifier"}],
+		"obligation": "requiredWhenAvailable",
+		"type": "administrative",
+		"repeatable": false,
+		"input": "single",
+		"visible": true,
+		"editable": false
+	},
+
+	
+	
+	{
+		"label": "Preservation Location",
+		"namespace": "dcterms",
+		"name": "source",
+		"definition": "A related resource from which the described resource is derived.",
+		"uri": "https://vocab.lib.uh.edu/bcdams-map#source",
+		"guidelines": "https://vocab.lib.uh.edu/bcdams-map/guidelines/source",
+		"source": "http://purl.org/dc/terms/source",
+		"crosswalk": {"avalon":{"label":"other identifier","type":"preservation location"}},
+		"range": [{"label":"Preservation ARK Identifier"}],
+		"obligation": "stronglyRecommended",
+		"type": "administrative",
+		"repeatable": false,
+		"input": "single",
+		"visible": true,
+		"editable": false
+	}
+
+]
